@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0px; color: white;}
+    .attribution a { color: white; }
+    body{
+      background-color: hsl(217, 54%, 11%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+    }
+    .container{
+      background-color: hsl(216, 50%, 16%);
+      margin: auto;
+    }
+    .imgage{
+      width: 355px;
+      height: 355px;
+      margin-top: 1rem;
+    }
+    .imgage:hover {
+      opacity: 0.5;
+    }
+    .view {
+      position: absolute;
+      opacity: 0;
+      margin: auto;
+      top: 0;
+      bottom: 10rem;
+      left: 0;
+      right: 0;
+    }
+    .hoverEffect:hover .view{
+      opacity: 1;
+    }
+    .title {
+      text-align: left;
+      margin-left: 0.8rem;
+      color: hsl(0, 0%, 100%);
+      width: 300px;
+    }
+    .paragraph {
+      color: lightgray;
+      margin-left: 0.8rem;
+      margin-right: 0.8rem;
+    }
+    .price_time{
+      display: flex;
+      justify-content: space-between;
+    }
+    .price {
+      color: hsl(178, 100%, 50%);
+      margin: 0.8rem;
+    }
+    .time {
+      margin: 0.8rem;
+      color: hsl(215, 51%, 70%);
+    }
+    .line{
+      border: solid lightgray 0.0001rem;
+      margin: 0.5rem 0.5rem;
+    }
+    .person {
+      width: 2rem;
+      height: auto;
+      border-radius: 50%;
+      border: white solid;
+      text-align: left;
+    }
+    .bottom {
+      text-align: left;
+      margin: 0.8rem;
+      display: flex;
+    }
+    .credit {
+      color: hsl(215, 51%, 70%);
+      margin: auto 1rem;
+    }
+    .name {
+      color: hsl(0, 0%, 100%);;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hoverEffect">
+      <img class="imgage" src="./images/image-equilibrium.jpg">
+      <img class="view"src="./images/icon-view.svg">
+    </div>
+    <h3 class="title">Equilibrium #3429</h3>
+    <p class="paragraph">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="price_time">
+      <div class="price">
+        <img src="./images/icon-ethereum.svg">
+        <span >0.041 ETH</span> 
+      </div>
+      <div class="time">
+        <img src="./images/icon-clock.svg">
+        <span>3 days left</span> 
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="bottom">
+      <img class="person" src="./images/image-avatar.png">
+      <span class="credit">Creation of <span class="name">Jules Wyvern</span></span>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">plokm1234</a>.
+  </div>
+</body>
+</html>
